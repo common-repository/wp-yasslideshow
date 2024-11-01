@@ -1,0 +1,158 @@
+.royalSlider .hide{display: none;}
+.royalSlider {
+  position: relative;
+}
+
+.royalSlider .rsArrow{
+  width:40px;
+  height:80px;
+  position:absolute;
+  top:50%;
+  margin-top:-40px;
+  line-height:75px;
+  font-size:50px;
+  text-align:right;
+  background: rgba(0,0,0,0.5);
+    -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.3s ease-out;  /* FF4+ */
+      -ms-transition: all 0.3s ease-out;  /* IE10? */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+          transition: all 0.3s ease-out;  
+}
+
+.royalSlider .rsArrow.rsArrowRight{
+  border-top-left-radius:80px;
+  border-bottom-left-radius:80px;
+  text-align: right;
+  right:0px;
+}
+
+
+.royalSlider .rsArrow.rsArrowLeft{
+  border-top-right-radius:80px;
+  border-bottom-right-radius:80px;
+  left:0px;
+  text-align: left;
+}
+
+.royalSlider .rsGCaption{
+  position:absolute;
+  text-align:left;
+  width:auto;
+  top: 40%;
+  left:150px;
+  padding:10px 10px;
+  border-radius:5px;
+  -webkit-transition-duration: 1s;
+}
+
+.royalSlider .rsGCaption.transform{
+  -webkit-transform: translate(-80px,0px) ;
+}
+
+.royalSlider .rsNav{
+  width:100%;
+  bottom:0;
+  left:0;
+  text-align:center;
+  cursor:pointer;
+  position:absolute;
+  margin: 0px auto;
+}
+
+.royalSlider .rsNav.rsBullets div{
+  width:8px;
+  height:8px;
+  border-radius:8px;
+  background:#000;
+  border:2px solid #fff;
+  margin:0px 3px;
+  display:inline-block;
+  text-align: inherit;
+}
+
+.royalSlider .rsNav.rsBullets .rsNavSelected{
+  background:red;
+}
+
+.royalSlider .rsNav.rsTabs .rsTab{
+  width:30px;
+  height:30px;
+  background:#000;
+  display:inline-block;
+  border:2px solid #fff;
+  margin-right:-2px;
+  line-height:30px;
+  text-align: inherit;
+  color:#fff;
+  font-size:14px;
+  -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.3s ease-out;  /* FF4+ */
+      -ms-transition: all 0.3s ease-out;  /* IE10? */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+          transition: all 0.3s ease-out; 
+}
+
+
+.royalSlider .timer{
+  width:34px;
+  height:34px;
+  background:#000000;
+  border-radius: 34px;
+  position:absolute;
+  cursor: pointer;
+  right:5px;
+  bottom:5px;
+  text-align:center;
+  line-height:50px;
+}
+
+.royalSlider .timer .pause{
+  width:17px;
+  height:17px;
+  border-radius:17px;
+  background:url(spiner.png) -17px;
+  position:absolute;
+  top:9px;
+  left:9px; 
+}
+
+.royalSlider .stopAuto.timer .pause{
+  background-position:0px;
+}
+
+#navOverflow{
+  width:324px;
+  height:34px;
+  position:absolute;
+  bottom:0;
+  overflow:hidden;
+  left:50%;
+  margin-left:-150px;
+}
+
+#navOverflow .rsNav{
+  top:0px;
+  left:30px;
+}
+
+#navOverflow .navOvernav{
+  position:absolute;
+  right:0;
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  border: 2px solid white;
+  z-index:9999999999;
+  background:#fff;
+  cursor:pointer;
+}
+
+#navOverflow .navOverLeft{
+  left:0;
+}
+
+#navOverflow .navOverRight{
+  right:0px;
+}
